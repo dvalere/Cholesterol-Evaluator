@@ -44,8 +44,9 @@ int main()
             diastolic is the 4th */
 
             cout << "DATA SET " << countertwo << endl;
-            cout << evaluate_cholesterol(HDL, LDL);
-            cout << evaluate_blood_pressure(systolic, diastolic) << endl << endl;
+            evaluate_cholesterol(HDL, LDL);
+            evaluate_blood_pressure(systolic, diastolic);
+            cout << endl << endl;
             // Calling the functions to evaluate cholesterol and blood pressure, and print the results.
         }
     myFile.close();
