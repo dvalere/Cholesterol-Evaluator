@@ -63,7 +63,7 @@ float ratio_cal(int x, int y){
     float ratiovalue;
     ratiovalue = float(x)/float(y);
     cout << setprecision(4) << ratiovalue << endl;
-    return ratiovalue;
+    return 0;
 }
 // A function to divide HDL by LDL, which is how you get the ratio.
 
