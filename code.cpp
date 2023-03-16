@@ -87,7 +87,7 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
             HDLreading = "Excellent";
         }
     }
-    // after going through the nested if statement, it prints the HDl reading level
+    // After going through the nested if statement, it prints the HDl reading level
     cout << "HDL is " << HDLreading << endl;
     
     //Next, check the patient's LDL levels and see where it stands.
