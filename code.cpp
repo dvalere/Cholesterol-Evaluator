@@ -114,3 +114,4 @@ void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading)
     cout << "Systolic reading is " << sysReading <<endl;
     cout << "Diastolic reading is " << diaReading << endl;
 }
+
