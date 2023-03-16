@@ -60,7 +60,7 @@ int main()
 
 // -------------------------------------------------------------------------------------------------------
 float ratio_cal(int x, int y){
-    float ratiovalue = x / y;
+    float ratiovalue = (x / y);
     return ratiovalue;
 }
 // A function to divide HDL by LDL, which is how you get the ratio.
