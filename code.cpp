@@ -125,7 +125,7 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
 
 void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading){
     cout << "Blood Pressure Profile" << endl;
-    cout << "Systolic: " << s << "Diastolic: " << d << endl;
+    cout << "Systolic: " << s << " Diastolic: " << d << endl;
     // prints the systolic and diastolic values inputted by the user
     if (s<120){
         sysReading = "Optimal";
@@ -134,7 +134,7 @@ void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading)
         sysReading = "Normal";
     }
     else if(s<140){
-        sysReading = "High";
+        sysReading = "Normal High";
         }
     else if(s<160){
         sysReading = "Stage 1 Hypertension";
