@@ -83,8 +83,10 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
             HDLreading = "Excellent";
         }
     }
+    // prints the ratio of HDL and LDL
+    cout << ratio_cal(hdl, ldl) << endl;
     // after going through the nested if statement, it prints the HDl reading level
-    cout << "HDL reading shows " << HDLreading << " levels" << endl;
+    cout << "HDL is " << HDLreading << endl;
     
     //Next, check the patient's LDL levels and see where it stands.
     if (ldl < 100){
@@ -106,9 +108,15 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
     }
     // Then, prints the LDL reading levels.
     cout << "LDL reading shows " << LDLreading << " levels" << endl;
-    // prints the ratio of HDL and LDL
-    cout << ratio_cal(hdl, ldl) << endl;
-
+    
+    // check to see the ratio of HDL to LDL good or not.
+    // prints the result of the restio of HDL to LDL reading.
+    if ((hdl/ldl) > 0.3){
+        cout << "Ratio of HDL to LDL is good" << endl;
+    }
+    else if ((hdl/ldl) <= 0.3){
+        cout << "Ratio of HDL to LDL is not good" << endl;
+    }
 }
 
 
