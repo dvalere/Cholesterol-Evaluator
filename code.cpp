@@ -59,7 +59,7 @@ int main()
 
 
 // -------------------------------------------------------------------------------------------------------
-float ratio_cal(float x, float y){
+float ratio_cal(int x, int y){
     float ratiovalue = (x / y);
     cout << ratiovalue << setprecision(4);
     return ratiovalue;
