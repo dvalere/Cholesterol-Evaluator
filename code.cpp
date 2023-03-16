@@ -60,9 +60,7 @@ int main()
 
 // -------------------------------------------------------------------------------------------------------
 float ratio_cal(int x, int y){
-    float a = x;
-    float b = y;
-    float ratiovalue = a / b;
+    float ratiovalue = x / y;
     return ratiovalue;
 }
 // A function to divide HDL by LDL, which is how you get the ratio.
@@ -74,7 +72,7 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
     cout << "HDL: " << hdl << " LDL: " << ldl << endl;
     
     // prints the ratio of HDL and LDL
-    cout << " Ratio: " << setprecision(4) << ratio_cal(hdl, ldl) << endl;
+    cout << "Ratio: " << ratio_cal(hdl, ldl) << endl;
     
     //start to check the patient's HDL levels and see where it stands.
     if (hdl < 40){
@@ -167,4 +165,3 @@ void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading)
     cout << "Systolic reading is " << sysReading <<endl;
     cout << "Diastolic reading is " << diaReading << endl;
 }
-
