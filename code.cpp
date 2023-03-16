@@ -71,6 +71,9 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
     // prints the individual parts use in Cholesterol, which is HDL and LDL. 
     cout << "HDL: " << hdl << "LDL: " << ldl << endl;
     
+    // prints the ratio of HDL and LDL
+    cout << ratio_cal(hdl, ldl) << endl;
+    
     //start to check the patient's HDL levels and see where it stands.
     if (hdl < 40){
         HDLreading = "Too low";
@@ -83,8 +86,6 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
             HDLreading = "Excellent";
         }
     }
-    // prints the ratio of HDL and LDL
-    cout << ratio_cal(hdl, ldl) << endl;
     // after going through the nested if statement, it prints the HDl reading level
     cout << "HDL is " << HDLreading << endl;
     
@@ -107,7 +108,7 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
         }
     }
     // Then, prints the LDL reading levels.
-    cout << "LDL reading shows " << LDLreading << " levels" << endl;
+    cout << "LDL is " << LDLreading << endl;
     
     // check to see the ratio of HDL to LDL good or not.
     // prints the result of the restio of HDL to LDL reading.
