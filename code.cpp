@@ -65,7 +65,49 @@ float ratio_cal(int x, int y){
 }
 // A function to divide HDL by LDL, which is how you get the ratio.
 
-void evaluate_cholesterol(int, int, string&HDLreading, string&LDLreading){
+void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading){
+    // print the title, which is the "Cholesterol Profile". 
+    cout << "Cholesterol Profile" << endl;
+    // prints the individual parts use in Cholesterol, which is HDL and LDL. 
+    cout << "HDL: " << hdl << "LDL: " << ldl << endl;
+    
+    //start to check the patient's HDL levels and see where it stands.
+    if (hdl < 40){
+        HDLreading = "Too low";
+    }
+    else if (hdl >= 40){
+        if (hdl < 60){
+            HDLreading = "Is okay";
+        }
+        else if (hdl >= 60){
+            HDLreading = "Excellent";
+        }
+    }
+    // after going through the nested if statement, it prints the HDl reading level
+    cout << "HDL reading shows " << HDLreading << " levels" << endl;
+    
+    //Next, check the patient's LDL levels and see where it stands.
+    if (ldl < 100){
+        LDLreading = "Optimal";
+    }
+    else if ((ldl >=100) && (ldl < 130)){
+        LDLreading = "Near Optimal";
+    }
+    else if ((ldl >= 130) && (ldl < 160)){
+        LDLreading = "Borderline high";
+    }
+    else if (ldl >=160){
+        if (ldl < 190){
+            LDLreading = "High";
+        }
+        else if (ldl >= 190){
+            LDLreading = "Very high";
+        }
+    }
+    // Then, prints the LDL reading levels.
+    cout << "LDL reading shows " << LDLreading << " levels" << endl;
+    // prints the ratio of HDL and LDL
+    cout << ratio_cal(hdl, ldl) << endl;
 
 }
 
@@ -114,4 +156,3 @@ void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading)
     cout << "Systolic reading is " << sysReading <<endl;
     cout << "Diastolic reading is " << diaReading << endl;
 }
-
