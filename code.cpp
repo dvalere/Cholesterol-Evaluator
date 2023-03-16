@@ -60,6 +60,7 @@ int main()
 
 // -------------------------------------------------------------------------------------------------------
 float ratio_cal(int x, int y){
+    float ratiovalue;
     ratiovalue = float(x)/float(y);
     cout << setprecision(4) << ratiovalue << endl;
     return ratiovalue;
