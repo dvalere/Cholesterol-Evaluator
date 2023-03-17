@@ -68,7 +68,7 @@ float ratio_cal(int x, int y){
 
 void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading){
     // print the title, which is the "Cholesterol Profile". 
-    cout << " Cholesterol Profile" << endl;
+    cout << "Cholesterol Profile" << endl;
     // prints the individual parts use in Cholesterol, which is HDL and LDL. 
     cout << " HDL: " << hdl << " LDL: " << ldl << endl;
     
@@ -77,14 +77,14 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
     
     //start to check the patient's HDL levels and see where it stands.
     if (hdl < 40){
-        HDLreading = " Too low";
+        HDLreading = "Too low";
     }
     else if (hdl >= 40){
         if (hdl < 60){
-            HDLreading = " Is okay";
+            HDLreading = "Is okay";
         }
         else if (hdl >= 60){
-            HDLreading = " Excellent";
+            HDLreading = "Excellent";
         }
     }
     // After going through the nested if statement, it prints the HDl reading level
@@ -92,20 +92,20 @@ void evaluate_cholesterol(int hdl, int ldl, string&HDLreading, string&LDLreading
     
     //Next, check the patient's LDL levels and see where it stands.
     if (ldl < 100){
-        LDLreading = " Optimal";
+        LDLreading = "Optimal";
     }
     else if ((ldl >=100) && (ldl < 130)){
-        LDLreading = " Near Optimal";
+        LDLreading = "Near Optimal";
     }
     else if ((ldl >= 130) && (ldl < 160)){
-        LDLreading = " Borderline high";
+        LDLreading = "Borderline high";
     }
     else if (ldl >=160){
         if (ldl < 190){
-            LDLreading = " High";
+            LDLreading = "High";
         }
         else if (ldl >= 190){
-            LDLreading = " Very high";
+            LDLreading = "Very high";
         }
     }
     // Then, prints the LDL reading levels.
@@ -128,40 +128,40 @@ void evaluate_blood_pressure(int s, int d, string&sysReading, string&diaReading)
     cout << " Systolic: " << s << " Diastolic: " << d << endl;
     // prints the systolic and diastolic values inputted by the user
     if (s<120){
-        sysReading = " Optimal";
+        sysReading = "Optimal";
         }
     else if(s<130){
-        sysReading = " Normal";
+        sysReading = "Normal";
     }
     else if(s<140){
-        sysReading = " Normal High";
+        sysReading = "Normal High";
         }
     else if(s<160){
-        sysReading = " Stage 1 Hypertension";
+        sysReading = "Stage 1 Hypertension";
     }
     else if(s<180){
-        sysReading = " Stage 2 Hypertension";
+        sysReading = "Stage 2 Hypertension";
     }
     else if(s>=180){
-        sysReading = " Stage 3 Hypertension";
+        sysReading = "Stage 3 Hypertension";
     }
     if (d<80){
-        diaReading = " Optimal";
+        diaReading = "Optimal";
     }
     else if (d<85){
-        diaReading = " Normal";
+        diaReading = "Normal";
     }
     else if (d<90) {
-        diaReading = " High Normal";
+        diaReading = "High Normal";
     }
     else if (d<100) {
-        diaReading = " Stage 1 Hypertension";
+        diaReading = "Stage 1 Hypertension";
     }
     else if (d<110) {
-        diaReading = " Stage 2 Hypertension";
+        diaReading = "Stage 2 Hypertension";
     }
     else if(d>=110) {
-        diaReading = " Stage 3 Hypertension";
+        diaReading = "Stage 3 Hypertension";
     }
     cout << " Systolic reading is " << sysReading <<endl;
     cout << " Diastolic reading is " << diaReading << endl;
